@@ -5,7 +5,7 @@ import { MyLibraryService } from './my-library.service';
   selector: 'lib-my-library',
   template: `
     <p>
-      my-library works!
+      my-library works! oh yeah!
     </p>
     <button (click)="makeRequest()">click</button>
   `,

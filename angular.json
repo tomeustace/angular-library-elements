@@ -199,7 +199,7 @@
                 }
               ],
               "optimization": true,
-              "outputHashing": "all",
+              "outputHashing": "none",
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
@@ -251,33 +251,6 @@
               "projects/my-elements/tsconfig.app.json",
               "projects/my-elements/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "my-elements-e2e": {
-      "root": "projects/my-elements-e2e/",
-      "projectType": "application",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "projects/my-elements-e2e/protractor.conf.js",
-            "devServerTarget": "my-elements:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "my-elements:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "projects/my-elements-e2e/tsconfig.e2e.json",
             "exclude": [
               "**/node_modules/**"
             ]

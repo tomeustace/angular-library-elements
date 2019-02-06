@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "bundle:elements": "ng build my-library && ng build my-elements --prod && node bundle-elements.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -36,6 +37,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~10.12.21",
     "codelyzer": "~4.5.0",
+    "concat": "^1.0.3",
     "jasmine-core": "~3.3.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.0.0",
