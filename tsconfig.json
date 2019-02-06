@@ -8,7 +8,7 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es5",
+    "target": "es2015",
     "typeRoots": [
       "node_modules/@types"
     ],
@@ -17,11 +17,17 @@
       "dom"
     ],
     "paths": {
-      "my-component-library": [
-        "dist/my-component-library"
+      "my-library": [
+        "dist/my-library"
       ],
-      "my-component-library/*": [
-        "dist/my-component-library/*"
+      "my-library/*": [
+        "dist/my-library/*"
+      ],
+      "my-lib": [
+        "dist/my-lib"
+      ],
+      "my-lib/*": [
+        "dist/my-lib/*"
       ]
     }
   }
